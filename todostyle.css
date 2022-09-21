@@ -30,6 +30,7 @@ h2 {
 ul {
   margin: 0;
   padding: 0;
+  display: inline-flex;
 }
 
 /* Style the list items:
@@ -47,6 +48,7 @@ ul li {
     font-size: 18px;
     transition: 0.2s;
     color: #152238;
+    outline: 1px solid #555;
     
     /* Prevents user from selecting list items (clicking
     will be used to check and uncheck items)
