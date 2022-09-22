@@ -24,6 +24,8 @@ Clone this repository (from the command line or using GitHub Desktop). If from t
 
 Once cloned locally, open up the to-do app by navigating to the cloned folder and clicking `index.html`. Alternatively, in a browser, navigate to `file:///<path-to-directory>/doodle_app/index.html`.
 
+Alternatively, view at https://19katz.github.io/doodle_app/.
+
 Experiment with the interface!
 
 ## Citations
