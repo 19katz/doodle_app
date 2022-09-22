@@ -1,6 +1,20 @@
 # CS279r Assignment: [Tier 2] Implement a user-testable version of Doodle
 
-This code creates a basic to-do list web app using HTML, CSS, and JavaScript. In addition to the basic functionality of adding and checking off todos, it also allows users to delete todos entirely and keeps track of how many tasks have been finished so far.
+This code creates the basic functionalities of the characteristic that distinguish Doodle's scheduling app for users entering their availability.
+
+Authors: Eshika Saxena and Kat Zhang
+
+## Key Distinguishing Characteristics
+
+We defined the distinguishing characteristics of Doodle as follows:
+
+* User must be presented with date options for a meeting.
+* User must click each date option to toggle between the indicators of "yes, maybe, and no."
+* App must contain basic instruction corresponding colors to the signals of "yes, maybe, and no" and indicating # clicks needed. 
+* User must be able to submit their availability.
+* User should be able to enter their name and email.
+
+These are the characteristics that make Doodle different from other scheduling apps.
 
 ## Usage
 
@@ -14,7 +28,7 @@ Experiment with the interface!
 
 ## Citations
 
-This code was created with elements from the following tutorials: 
+Some parts of this code was adapted from todo-list tutorials, listed below:
 
 [W3Schools Tutorial](https://www.w3schools.com/howto/howto_js_todolist.asp)
 [Medium Tutorial](https://medium.com/clarusway/making-a-todo-list-with-html-css-and-javascript-154839b770b6)

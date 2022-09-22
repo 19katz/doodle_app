@@ -31,6 +31,7 @@ ul {
   margin-top: 5px;
   margin-bottom: 15px;
   padding: 0;
+  /* Makes the list horizontal */
   display: inline-flex;
 }
 
@@ -52,7 +53,7 @@ ul li {
     outline: 1px solid #555;
     
     /* Prevents user from selecting list items (clicking
-    will be used to check and uncheck items)
+    will be used to indicate availability).
     */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -62,23 +63,28 @@ ul li {
   
   /* On hover, make the background color darker.
   
-  This makes it clear that the user is meant to select
-  the items on their checklist to check off.
+  This makes it clear that the items are clickable.
   */
   ul li:hover {
     background: #ddd;
   }
   
-  /* Change background and text colors when checked off.
+  /* Change background and text color when clicked one time.
   This is styling created for list elements in the "checked"
   class. This class is used in the JavaScript portion of
-  the code to check off clicked-on list items.
+  the code and corresponds to a "yes" for the scheduling
+  mechanism.
   */
   ul li.checked {
     background: #90EE90;
     color: #eee;
   }
 
+  /* Change background and text color when clicked twice.
+  This is styling created for list elements in the "twicechecked"
+  class. This class is used in the JavaScript portion of
+  the code and corresponds to a "maybe/yes but with qualms" for the 
+  scheduling mechanism. */
   ul li.twicechecked {
     background: #ffdd3c;
     color: #eee;
@@ -90,7 +96,7 @@ ul li {
   degrees so that it looks like a checkmark.
 
   The "before" keyword inserts this before every list element
-  of the checked class.
+  of the checked or twicechecked classes.
   */
   ul li.checked::before {
     content: '';
