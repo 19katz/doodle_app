@@ -1,12 +1,7 @@
 /* This section contains the JavaScript code, which adds functionality
 for adding, checking, removing, and keeping count of todo items. */
 
-// Extract out the todos by getting all list elements
-// (using their tag name) and create a close button for all
-var myTodos = document.getElementsByTagName("LI");
-
-// "Checks off" todos when clicked on.
-// get the list of todos using ID
+// Gets the list of dates using ID
 var list = document.getElementById("myUL");
 // addEventListener adds an event handler that will handle
 // any event where the user clicks.

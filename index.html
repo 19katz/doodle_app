@@ -1,35 +1,41 @@
 <html> 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="todostyle.css">
     <title>Doodle User Test</title> 
   </head>
-
   <body> 
-    <!--Adds a title and mechanism for adding todos-->
+    <!-- Adds a header with the website name -->
     <div id="myDIV" class="header">
         <h2 style="margin:5px">Doodle Poll</h2>
     </div>
-    <p>Select your availability. Green = yes, yellow = yes but not preferred, gray = no.</p>
-    <!--List of sample todos-->
-    <ul id="myUL">
-        <li>September 19, 3:00pm-5:00pm</li>
-        <li class="checked">September 20, 4:00pm-6:00pm</li>
-        <li>September 21, 1:30pm-3:30pm</li>
-        <li>September 22, 1:00pm-3:00pm</li>
-        <li>September 23, 10:00am-12:00pm</li>
-    </ul>
-    <p>Other Availabilities</p>
-    <ul id="otherUL">
-      <li>Person 1</li>
-      <li>September 19, 3:00pm-5:00pm</li>
-      <li class="checked">September 20, 4:00pm-6:00pm</li>
-      <li>September 21, 1:30pm-3:30pm</li>
-      <li>September 22, 1:00pm-3:00pm</li>
-      <li>September 23, 10:00am-12:00pm</li>
-  </ul>
+    <p>Select your preferred times. Green = yes (1 click), yellow = if need be (2 clicks), gray = no.</p>
+    <!-- Enable form to redirect to a new HTML page on submit -->
+    <form action="action.php" method="post" target="_blank" id="availability form">
+      <!-- Create input box and label for name -->
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+      </div>
+      <!-- Create input box and label for email -->
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+      </div>
+      <!-- Create list of dates for the user to choose from  -->
+      <ul id="myUL">
+          <li>September 19, 3:00pm-5:00pm</li>
+          <li class="checked">September 20, 4:00pm-6:00pm</li>
+          <li>September 21, 1:30pm-3:30pm</li>
+          <li>September 22, 1:00pm-3:00pm</li>
+          <li>September 23, 10:00am-12:00pm</li>
+      </ul>
+      <!-- Submit button redirects to the submit page on click -->
+      <button type="submit" class="btn btn-primary" onclick = "window.location.href = 'submit.html' ">Submit</button>
+    </form>
     <!--Reference to the JavaScript code.-->
     <script src="script.js"></script>
   </body>
-  
 </html>
