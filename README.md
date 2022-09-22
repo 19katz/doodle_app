@@ -1,4 +1,4 @@
-# CS279r Homework 0: To-Do App
+# CS279r Assignment: [Tier 2] Implement a user-testable version of Doodle
 
 This code creates a basic to-do list web app using HTML, CSS, and JavaScript. In addition to the basic functionality of adding and checking off todos, it also allows users to delete todos entirely and keeps track of how many tasks have been finished so far.
 
@@ -6,9 +6,9 @@ This code creates a basic to-do list web app using HTML, CSS, and JavaScript. In
 
 Clone this repository (from the command line or using GitHub Desktop). If from the command line, use the following command:
 
-`git clone https://github.com/19katz/todo_html_css.git`
+`git clone https://github.com/19katz/doodle_app.git`
 
-Once cloned locally, open up the to-do app by navigating to the cloned folder and clicking `index.html`. Alternatively, in a browser, navigate to `file:///<path-to-directory>/todo_html_css/index.html`.
+Once cloned locally, open up the to-do app by navigating to the cloned folder and clicking `index.html`. Alternatively, in a browser, navigate to `file:///<path-to-directory>/doodle_app/index.html`.
 
 Experiment with the interface!
 
